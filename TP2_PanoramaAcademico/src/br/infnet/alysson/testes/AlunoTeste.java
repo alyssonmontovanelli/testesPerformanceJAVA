@@ -1,10 +1,21 @@
 package br.infnet.alysson.testes;
 
+import br.infnet.alysson.dominio.Aluno;
+
 public class AlunoTeste {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		Aluno a1 = new Aluno("Alysson",26,"Matemática",9,2526);
+		
+		System.out.println(a1);
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }

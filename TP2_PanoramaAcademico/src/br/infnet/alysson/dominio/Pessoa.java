@@ -4,9 +4,6 @@ import br.infnet.alysson.dominio.auxiliar.Constante;
 
 public class Pessoa {
 	
-	public String[] nomes;
-	public int[] idades;
-
 	private String nome;
 	private int idade;
 
@@ -15,7 +12,7 @@ public class Pessoa {
 	
 	}
 	
-	public Pessoa(String nomeInfo, int idadeInfo, String funcaoInfo){
+	public Pessoa(String nomeInfo, int idadeInfo){
 		this.nome = nomeInfo;
 		this.idade = idadeInfo;
 	}
@@ -23,24 +20,14 @@ public class Pessoa {
 	
 	//indice  vetores
 	
-	private int nomesIndice = 0;
-	private int idadesIndice = 0;
-	
 	//Methods
-	public void atribuirValores(){
-		int i = this.idade;
-		String n = this.nome;
-		nomes[nomesIndice] = n;
-		idades[idadesIndice] = i;
-		nomesIndice++;
-		idadesIndice++;
-	}
+	
 	
 	
 	
 	
 	public String toString() {
-		return nome + " - " + idade + " - " + nomes;
+		return nome + " / " + "idade: " + idade + " / ";
 	}
 	
 	
